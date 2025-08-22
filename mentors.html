@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentors - SparkLeap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>SparkLeap</h2></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="dashboard.html" class="nav-link" id="dashboardLink">Dashboard</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="mentors.html" class="nav-link active">Mentors</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <div class="nav-buttons" id="navButtons">
+                <a href="login.html" class="btn-secondary">Login</a>
+                <a href="signup.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mentors-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Expert Mentors</h1>
+                <p>Connect with industry professionals who will guide your career journey</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Expertise:</label>
+                    <select id="expertiseFilter">
+                        <option value="">All Areas</option>
+                        <option value="technology">Technology</option>
+                        <option value="business">Business</option>
+                        <option value="design">Design</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Experience:</label>
+                    <select id="experienceFilter">
+                        <option value="">All Levels</option>
+                        <option value="mid">3-7 years</option>
+                        <option value="senior">8-15 years</option>
+                        <option value="executive">15+ years</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="mentors-grid" id="mentorsGrid">
+                <!-- Mentors will be loaded here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="mentors.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - SparkLeap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>SparkLeap</h2></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="dashboard.html" class="nav-link" id="dashboardLink">Dashboard</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="mentors.html" class="nav-link">Mentors</a>
+                <a href="resources.html" class="nav-link active">Resources</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <div class="nav-buttons" id="navButtons">
+                <a href="login.html" class="btn-secondary">Login</a>
+                <a href="signup.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="resources-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Learning Resources</h1>
+                <p>Access our comprehensive library of guides, tools, and materials to accelerate your learning</p>
+            </div>
+
+            <div class="resource-categories">
+                <div class="category-card">
+                    <div class="category-icon">💻</div>
+                    <h3>Technology</h3>
+                    <p>Programming guides, frameworks, and development tools</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>JavaScript Fundamentals</h4>
+                            <p>Complete guide to modern JavaScript development</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('JavaScript Fundamentals Guide')">View Guide</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>React Best Practices</h4>
+                            <p>Building scalable React applications</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('React Best Practices PDF')">Download PDF</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Database Design Patterns</h4>
+                            <p>Designing efficient and scalable databases</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Database Design Video Course')">Watch Course</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3>Business</h3>
+                    <p>Business strategy, analytics, and management resources</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Business Strategy Basics</h4>
+                            <p>Fundamentals of strategic planning and execution</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Business Strategy eBook')">View eBook</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Data Analytics Tools</h4>
+                            <p>Introduction to Excel, Tableau, and Power BI</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Analytics Tools Tutorial')">Start Tutorial</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Project Management Guide</h4>
+                            <p>Agile and traditional project management methods</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('PM Certification Guide')">Download Guide</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>UI/UX design principles, tools, and workflows</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>UX Design Principles</h4>
+                            <p>Creating user-centered design solutions</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('UX Design Handbook')">Open Handbook</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Figma Masterclass</h4>
+                            <p>Complete guide to professional design workflows</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Figma Video Series')">Watch Series</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Color Theory Guide</h4>
+                            <p>Understanding color in digital design</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Color Theory PDF')">Download PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📢</div>
+                    <h3>Marketing</h3>
+                    <p>Digital marketing strategies and growth tactics</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Digital Marketing 101</h4>
+                            <p>Fundamentals of online marketing and advertising</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Marketing Fundamentals Course')">Start Course</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Content Strategy Guide</h4>
+                            <p>Creating compelling content that converts</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Content Strategy Workbook')">Get Workbook</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Social Media Analytics</h4>
+                            <p>Measuring and optimizing social media performance</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Social Analytics Tools')">View Tools</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎯</div>
+                    <h3>Career Prep</h3>
+                    <p>Interview preparation, resume building, and career guidance</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Resume Template Pack</h4>
+                            <p>Professional templates for different industries</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Resume Templates')">Download Pack</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Interview Preparation</h4>
+                            <p>Common questions and proven answer strategies</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Interview Prep Guide')">Study Guide</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Networking Guide</h4>
+                            <p>Building professional relationships and connections</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Networking Strategies')">Read Guide</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">💬</div>
+                    <h3>Communication</h3>
+                    <p>Professional communication and presentation skills</p>
+                    <div class="resource-list">
+                        <div class="resource-item">
+                            <h4>Public Speaking Mastery</h4>
+                            <p>Overcoming fear and delivering impactful presentations</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Public Speaking Course')">Join Course</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Business Writing</h4>
+                            <p>Clear and professional written communication</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Business Writing Templates')">Get Templates</button>
+                        </div>
+                        <div class="resource-item">
+                            <h4>Team Collaboration</h4>
+                            <p>Working effectively in diverse, remote teams</p>
+                            <button class="btn-secondary btn-small" onclick="openResource('Collaboration Best Practices')">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openResource(resourceName) {
+            alert(`Opening: ${resourceName}\n\nThis is a demo resource. In the full platform, this would open or download the actual resource.`);
+        }
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

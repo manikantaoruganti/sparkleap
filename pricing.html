@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - SparkLeap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html"><h2>SparkLeap</h2></a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="dashboard.html" class="nav-link" id="dashboardLink">Dashboard</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="mentors.html" class="nav-link">Mentors</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <div class="nav-buttons" id="navButtons">
+                <a href="login.html" class="btn-secondary">Login</a>
+                <a href="signup.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pricing-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Choose Your Learning Path</h1>
+                <p>Flexible plans designed to fit your career goals and budget</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for exploring the platform</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✅ Access to 3 basic projects</li>
+                            <li>✅ Community forum access</li>
+                            <li>✅ Basic learning resources</li>
+                            <li>✅ Project completion certificates</li>
+                            <li>❌ Mentor sessions</li>
+                            <li>❌ Premium projects</li>
+                            <li>❌ Career coaching</li>
+                            <li>❌ Industry networking events</li>
+                        </ul>
+                    </div>
+                    <button class="btn-secondary btn-full" onclick="selectPlan('free')">Get Started Free</button>
+                </div>
+
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for serious learners</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✅ Access to all projects</li>
+                            <li>✅ 2 mentor sessions per month</li>
+                            <li>✅ Premium learning resources</li>
+                            <li>✅ Industry-recognized certificates</li>
+                            <li>✅ Priority support</li>
+                            <li>✅ Career guidance workshops</li>
+                            <li>❌ Unlimited mentor sessions</li>
+                            <li>❌ 1-on-1 career coaching</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary btn-full" onclick="selectPlan('pro')">Start Pro Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">79</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For maximum career acceleration</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li>✅ Everything in Pro</li>
+                            <li>✅ Unlimited mentor sessions</li>
+                            <li>✅ 1-on-1 career coaching</li>
+                            <li>✅ Direct industry connections</li>
+                            <li>✅ Custom project recommendations</li>
+                            <li>✅ Job placement assistance</li>
+                            <li>✅ Exclusive networking events</li>
+                            <li>✅ LinkedIn profile optimization</li>
+                        </ul>
+                    </div>
+                    <button class="btn-primary btn-full" onclick="selectPlan('premium')">Go Premium</button>
+                </div>
+            </div>
+
+            <div class="pricing-faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>Can I switch plans anytime?</h4>
+                        <p>Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and billing is prorated.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Is there a free trial for paid plans?</h4>
+                        <p>Yes, both Pro and Premium plans come with a 7-day free trial. Cancel anytime during the trial period at no cost.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What if I'm not satisfied?</h4>
+                        <p>We offer a 30-day money-back guarantee on all paid plans. If you're not completely satisfied, we'll refund your payment.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Are there student discounts available?</h4>
+                        <p>Yes! We offer a 50% discount for verified students. Contact our support team with your student ID for eligibility.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do certificates have industry recognition?</h4>
+                        <p>Our certificates are backed by industry partners and recognized by leading companies in their respective fields.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Can I pause my subscription?</h4>
+                        <p>Premium users can pause their subscription for up to 3 months per year while maintaining access to completed work.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-cta">
+                <div class="cta-content">
+                    <h2>Ready to Accelerate Your Career?</h2>
+                    <p>Join thousands of students who have successfully launched their careers with SparkLeap</p>
+                    <div class="cta-buttons">
+                        <a href="signup.html" class="btn-primary btn-large">Start Free Today</a>
+                        <button class="btn-secondary btn-large" onclick="alert('Schedule a demo: demo@sparkleap.com')">Schedule Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="pricing.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

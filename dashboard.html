@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SparkLeap</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SparkLeap</h2>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="mentors.html" class="nav-link">Mentors</a>
+                <a href="resources.html" class="nav-link">Resources</a>
+                <a href="team.html" class="nav-link">Team</a>
+            </div>
+            <div class="nav-buttons">
+                <div class="user-menu">
+                    <span id="userName">User</span>
+                    <button id="logoutBtn" class="btn-secondary">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="dashboard">
+        <div class="container">
+            <div class="dashboard-header">
+                <div class="welcome-section">
+                    <h1 id="welcomeMessage">Welcome back!</h1>
+                    <p>Continue your learning journey and track your progress</p>
+                </div>
+                <div class="subscription-badge" id="subscriptionBadge">
+                    <span>Free Plan</span>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <h3 id="enrolledProjects">0</h3>
+                        <p>Enrolled Projects</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-info">
+                        <h3 id="completedProjects">0</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-info">
+                        <h3 id="certifications">0</h3>
+                        <p>Certifications</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3 id="mentorConnections">0</h3>
+                        <p>Mentor Connections</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Your Projects</h2>
+                        <a href="projects.html" class="btn-secondary">View All</a>
+                    </div>
+                    <div class="project-cards" id="userProjects">
+                        <div class="empty-state">
+                            <div class="empty-icon">📝</div>
+                            <h3>No projects yet</h3>
+                            <p>Start your first project to begin your learning journey</p>
+                            <a href="projects.html" class="btn-primary">Browse Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recent Activity</h2>
+                    </div>
+                    <div class="activity-feed" id="activityFeed">
+                        <div class="activity-item">
+                            <div class="activity-icon">🎉</div>
+                            <div class="activity-content">
+                                <p><strong>Welcome to SparkLeap!</strong></p>
+                                <span class="activity-time">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-section">
+                    <div class="section-header">
+                        <h2>Recommended for You</h2>
+                    </div>
+                    <div class="recommendations">
+                        <div class="recommendation-card">
+                            <h4>🚀 Getting Started Guide</h4>
+                            <p>Learn how to make the most of your SparkLeap experience</p>
+                            <a href="resources.html" class="btn-secondary btn-small">Read Guide</a>
+                        </div>
+                        <div class="recommendation-card">
+                            <h4>💼 Build Your Profile</h4>
+                            <p>Complete your profile to get personalized project recommendations</p>
+                            <button class="btn-secondary btn-small" onclick="alert('Profile editing coming soon!')">Edit Profile</button>
+                        </div>
+                        <div class="recommendation-card">
+                            <h4>🎯 Set Career Goals</h4>
+                            <p>Define your career objectives to get targeted learning paths</p>
+                            <button class="btn-secondary btn-small" onclick="alert('Goal setting coming soon!')">Set Goals</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
